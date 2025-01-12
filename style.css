@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background-color: #f0f8ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    background-color: #9ed2f0;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.calculator form input {
+    border: none;
+    outline: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 5px;
+    background-color: #ffffff;
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5), 
+                5px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.calculator form input:hover {
+    transform: scale(1.05);
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.8), 
+                5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.calculator form input:active {
+    transform: scale(0.95);
+    box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 0.5), 
+                inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.d {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+
+.d input {
+    flex: 1;
+    font-size: 45px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: inset -3px -3px 10px rgba(255, 255, 255, 0.5), 
+                inset 3px 3px 10px rgba(0, 0, 0, 0.1);
+    text-align: right;
+}
+
+.matrix {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.row input {
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    background-color: #ffffff;
+    color: #333;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    margin: 5px;
+}
+
+.row input:hover {
+    transform: scale(1.05);
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.8), 
+                5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.row input:active {
+    transform: scale(0.95);
+    box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 0.5), 
+                inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
